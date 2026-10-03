@@ -2304,8 +2304,6 @@ The mapping is conceptual; this project does not claim Google's internal impleme
 
 ## 284. Principal-Level Architecture Review
 
-A strong design review should be able to defend:
-
 ```text
 Why SQL, not chat history, owns workflow state.
 Why worktrees are isolated per candidate.
