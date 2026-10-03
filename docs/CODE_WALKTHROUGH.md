@@ -1,0 +1,3 @@
+# Code Walkthrough
+
+`repository.py` performs real Git-backed inspection. `worktrees.py` creates isolated candidate branches/worktrees. `planner.py` creates typed engineering work. `compiler.py` validates DAG correctness. `agents.py` separates research/coding/debug/review responsibilities. `subagents.py` provides bounded fan-out. `skills.py` defines reusable procedures. `mcp.py` is the tool interoperability boundary. `sandbox.py` executes allowlisted argv commands with timeouts. `evaluator.py` gates candidate quality. `artifacts.py` persists hashed evidence. `runtime.py` composes the executable local flow. `models.py` provides durable distributed-runtime foundations.

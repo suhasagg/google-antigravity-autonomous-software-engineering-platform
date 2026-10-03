@@ -1,0 +1,1 @@
+{"tenant_id":"demo","principal_id":"engineer@example","repository":"/workspace/my-repo","goal":"Inspect the repository, propose a safe improvement, run tests and prepare a reviewed candidate patch","base_ref":"HEAD"}

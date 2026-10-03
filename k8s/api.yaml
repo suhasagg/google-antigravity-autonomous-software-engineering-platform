@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: engineering-api, namespace: antigravity}
+spec:
+ replicas: 2
+ selector: {matchLabels: {app: engineering-api}}
+ template:
+  metadata: {labels: {app: engineering-api}}
+  spec:
+   containers:
+   - name: api
+     image: antigravity-engineering-platform:latest
+     ports: [{containerPort: 8000}]
+     readinessProbe: {httpGet: {path: /health, port: 8000}, initialDelaySeconds: 5, periodSeconds: 5}
+     resources: {requests: {cpu: "250m", memory: "256Mi"}, limits: {cpu: "2", memory: "2Gi"}}
